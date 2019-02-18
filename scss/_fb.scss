@@ -1,0 +1,52 @@
+// Styling for the call to action section
+section.facebook-feeds {
+  color: white;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/dark-bg.jpg");
+  background-position: center;
+  @include background-cover;
+  .work-hours-content {
+    position: relative;
+    z-index: 1;
+    h2 {
+      font-size: 50px;
+      max-width: 450px;
+      margin-top: 0;
+      margin-bottom: 25px;
+      color: white;
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 80px;
+      }
+    }
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: fade-out(black, 0.5);
+  }
+  .day-container {
+    border: solid 2px $theme-primary;
+    background-color: black;
+    text-align: center;
+    margin: 5px;
+    height: 100px;
+    .day-row {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .day-text {
+      font-size: 24px;
+    }
+    .time-text {
+      margin-top: -5px !important;
+    }
+  }
+}

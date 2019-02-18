@@ -1,0 +1,14 @@
+// Styling for the download section
+section.contact {
+  color: white;
+  h2 {
+    @include landing-font;
+    color: $theme-primary;
+  }
+  @media (max-width: 767px) {
+    .text-small-center {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+}

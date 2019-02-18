@@ -1,0 +1,30 @@
+// Styling for the portfolio section
+section.portfolio {
+  background-image: url("../img/tattooshop.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px !important;
+
+  // .portfolio-logo {
+  //   margin-top: -80px;
+  // }
+
+  background-color: darkgrey;
+  .btn:focus,
+  .btn:active,
+  button:focus,
+  button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  #image-gallery .modal-footer {
+    display: block;
+  }
+
+  .thumb {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

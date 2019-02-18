@@ -1,0 +1,112 @@
+// Styling for the navbar
+#mainNav {
+  border-color: fade-out($gray-darker, 0.95);
+  background-color: rgba(0, 0, 0, 0.822);
+  @include transition-all;
+  @include heading-font;
+  .navbar-brand {
+    padding: 0px;
+    .header-logo {
+      -webkit-transform: scale(0.6);
+      @include transition-all;
+    }
+    color: white;
+    font-size: 30px;
+    @include heading-font;
+    &:hover,
+    &:focus {
+      color: darken($theme-primary, 10%);
+    }
+  }
+  .navbar-toggler {
+    font-size: 18px;
+    padding: 8px 10px;
+    color: $gray-darker;
+    background-color: rgba(255, 255, 255, 0.959);
+  }
+  .navbar-nav {
+    > li {
+      padding-left: 5px;
+      padding-right: 5px;
+      > a {
+        font-size: 18px;
+        @include nav-font;
+        &.active {
+          border-bottom: solid 2px $theme-primary;
+          color: $theme-primary !important;
+          background-color: transparent;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+      > a,
+      > a:focus {
+        color: white;
+        &:hover {
+          color: $theme-primary;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    padding-top: 15px;
+    border-color: transparent;
+    background-color: transparent;
+    .navbar-brand {
+      .header-logo {
+        -webkit-transform: scale(1);
+        @include transition-all;
+      }
+      color: fade(white, 70%);
+      &:hover,
+      &:focus {
+        color: $theme-primary;
+      }
+    }
+    .navbar-nav > li > a,
+    .navbar-nav > li > a:focus {
+      color: white;
+      &:hover {
+        border-bottom: solid 2px $theme-primary;
+        color: $theme-primary;
+      }
+    }
+    &.navbar-slide-up {
+      padding: 0px;
+    }
+    &.navbar-shrink {
+      padding-top: 0px;
+      border: none;
+      background-color: rgba(10, 10, 10, 0.95);
+      .navbar-brand {
+        font-size: 24px;
+        color: $theme-primary;
+        &:hover,
+        &:focus {
+          color: $theme-primary;
+        }
+        .header-logo {
+          padding: 0px;
+          -webkit-transform: scale(0.75);
+          -webkit-transition: all 0.75s;
+          -moz-transition: all 0.75s;
+          transition: all 0.75s;
+          &:hover,
+          &:focus {
+            color: $theme-primary;
+          }
+        }
+      }
+      .navbar-nav > li > a,
+      .navbar-nav > li > a:focus {
+        font-size: 12px;
+        color: white;
+        &:hover {
+          border-bottom: solid 2px $theme-primary;
+          color: $theme-primary;
+        }
+      }
+    }
+  }
+}

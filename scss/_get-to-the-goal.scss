@@ -1,0 +1,19 @@
+section.get-to-the-goal {
+  // background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  //   url("../img/dark-bg.jpg");
+  // background-attachment: fixed;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: auto;
+
+  .btn-xl-book {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: $dark-theme-primary;
+    border-color: $dark-theme-primary;
+    padding: 10px 35px;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
