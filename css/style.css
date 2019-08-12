@@ -1,0 +1,355 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.pt-100 {
+	padding-top: 100px;
+}
+
+.pb-100 {
+	padding-bottom: 100px;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.no-js #loader {
+	display: none;
+}
+
+.js #loader {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+
+.spinner {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/spinner.gif) center no-repeat #fff;
+}
+
+@media (max-width: 767px) {
+	.fixed-top {
+		position: relative;
+		top: auto;
+	}
+	.navbar-collapse {
+		max-height: none;
+	}
+}
+
+#mainNav {
+	padding: 2rem 1rem;
+	font-size: 24px;
+	transition: 0.4s;
+	border-bottom: 1px solid #e2e2e2;
+}
+@media (max-width: 500px) {
+	#mainNav {
+		padding-top: 30px;
+	}
+}
+#mainNav .container img#navbar-logo {
+	max-width: 50px;
+}
+#mainNav a {
+	color: #2b2b2b;
+}
+#mainNav a.navbar-brand {
+	font-size: 30px;
+	transition: 0.4s;
+	font-family: "Great Vibes", cursive;
+}
+#mainNav a.navbar-brand:hover {
+	color: #0069d9;
+}
+#mainNav a:hover {
+	color: #0069d9;
+	transition: 0.4s;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	#mainNav ul.navbar-text {
+		padding-left: 0px !important;
+	}
+	#mainNav li.nav-icon {
+		font-size: 24px !important;
+	}
+}
+#mainNav li.nav-icon {
+	font-size: 30px;
+	color: #2b2b2b;
+}
+#mainNav li.nav-icon .fa-facebook-square {
+	color: #1877f2;
+}
+#mainNav li.nav-icon .fa-facebook-square:hover {
+	color: #166ee0;
+	transition: 0.4s;
+}
+#mainNav li.nav-icon .fa-twitter-square {
+	color: #1da1f2;
+}
+#mainNav li.nav-icon .fa-twitter-square:hover {
+	color: #1993df;
+	transition: 0.4s;
+}
+#mainNav li.nav-icon .fa-linkedin {
+	color: #007bb5;
+}
+#mainNav li.nav-icon .fa-linkedin:hover {
+	color: #006b9c;
+	transition: 0.4s;
+}
+#mainNav .dropdown-menu li:hover .sub-menu {
+	visibility: visible;
+}
+#mainNav .dropdown:hover .dropdown-menu {
+	display: block;
+}
+#mainNav .dropdown-menu {
+	box-shadow: 0px 8px 8px 5px #3b3b3b1e;
+}
+
+#headerSection {
+	margin-top: 100px;
+}
+@media (max-width: 500px) {
+	#headerSection {
+		margin-top: 0px !important;
+	}
+	#headerSection .container-fluid {
+		height: 100vh;
+	}
+}
+@media (min-width: 501px) {
+	#headerSection .container-fluid {
+		height: 75vh;
+	}
+}
+#headerSection .container-fluid {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(../img/headerbg-min.jpg) repeat 0 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#headerSection .container-fluid .flex-row {
+	height: 100%;
+}
+#headerSection .container-fluid .flex-row .col {
+	text-align: center;
+}
+#headerSection .container-fluid .flex-row .col #headerPWDlogo {
+	width: 250px;
+	margin-bottom: 50px;
+}
+#headerSection .container-fluid .flex-row .col #headerTopText {
+	font-family: "Oswald", sans-serif;
+	color: white;
+	vertical-align: middle;
+}
+#headerSection
+	.container-fluid
+	.flex-row
+	.col
+	#headerTopText
+	#headerTopInnerText
+	.txt-rotate {
+	color: #369ef3;
+}
+@media (min-width: 1200px) {
+	#headerSection
+		.container-fluid
+		.flex-row
+		.col
+		#headerTopText
+		#headerTopInnerText {
+		font-size: 60px !important;
+	}
+}
+
+#technologies {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #0069d9;
+	text-align: center;
+}
+#technologies .container-fluid {
+	vertical-align: middle;
+	overflow: hidden;
+}
+#technologies .container-fluid .flex-row {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+#technologies .container-fluid .flex-row img {
+	max-width: 75px;
+}
+
+#missionStatement {
+	background-color: #cccccc;
+	color: #585858;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#services {
+	background-color: #e0e0e0;
+}
+#services .section-title {
+	position: relative;
+}
+#services .section-title p {
+	font-size: 16px;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+#services .section-title h4 {
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: capitalize;
+	position: relative;
+	padding-bottom: 20px;
+	display: inline-block;
+}
+#services .section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 80px;
+	height: 2px;
+	background-color: #d8d8d8;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+}
+#services .section-title h4:after {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color: #0069d9;
+	left: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25px;
+}
+#services .single-service {
+	position: relative;
+	text-align: center;
+	margin-bottom: 50px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	padding: 30px 20px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+	background-color: white;
+}
+#services .single-service:before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	background-color: #0069d9;
+	left: 0;
+	top: 0;
+	content: "";
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+#services .single-service:after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	background-color: #0069d9;
+	right: 0;
+	bottom: 0;
+	content: "";
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+#services .single-service:hover:after,
+#services .single-service:hover:before {
+	width: 50%;
+	height: 2px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+#services .single-service:hover {
+	box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+#services .single-service:hover i.fa,
+#services .single-service:hover i.fas {
+	background-color: #0069d9;
+	color: #fff;
+	border-color: #0069d9;
+	border-radius: 0;
+}
+#services .single-service i.fa,
+#services .single-service i.fas {
+	font-size: 20px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #c9c9c9;
+	line-height: 60px;
+	margin-bottom: 30px;
+	border-radius: 50%;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+#services .single-service h4 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+#services .single-service p {
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+#letsBuild {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #0069d9;
+	text-align: center;
+}
+#letsBuild h4 {
+	color: white;
+	font-family: "Oswald", sans-serif;
+	font-size: 36px;
+	letter-spacing: 3px;
+}
+
+#contact .container .row .col p {
+	font-size: 18px;
+}
+
+#footer {
+	background-color: #cccccc;
+}
+
+#copyright {
+	background-color: #0069d9;
+	text-align: center;
+}
+#copyright p {
+	color: white;
+}
+#copyright #footerRow {
+	padding-bottom: 20px;
+}
+#copyright #footerRow .card {
+	background-color: transparent;
+	color: white;
+	border: none;
+}
+#copyright #footerRow .card .list {
+	padding-left: 0px;
+	list-style: none;
+}
