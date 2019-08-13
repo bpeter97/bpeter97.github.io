@@ -102,6 +102,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
+    #headerSection .container-fluid.about {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/about-bg.jpg) repeat 0 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
     #headerSection .container-fluid .flex-row {
       height: 100%; }
       #headerSection .container-fluid .flex-row .col {
@@ -118,6 +123,14 @@ body {
           @media (min-width: 1200px) {
             #headerSection .container-fluid .flex-row .col #headerTopText #headerTopInnerText {
               font-size: 60px !important; } }
+        #headerSection .container-fluid .flex-row .col.about #headerTopText {
+          color: #a6d1ff;
+          font-size: 80px; }
+        #headerSection .container-fluid .flex-row .col.about p {
+          color: white;
+          font-size: 24px; }
+        #headerSection .container-fluid .flex-row .col.about .embed-responsive {
+          margin-top: 30px !important; }
 
 #technologies {
   padding-top: 20px;
@@ -267,3 +280,7 @@ body {
       #copyright #footerRow .card .list {
         padding-left: 0px;
         list-style: none; }
+        #copyright #footerRow .card .list a {
+          color: white; }
+          #copyright #footerRow .card .list a:hover, #copyright #footerRow .card .list a:active, #copyright #footerRow .card .list a:visited {
+            color: #a6d1ff; }

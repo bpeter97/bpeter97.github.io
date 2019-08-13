@@ -1,6 +1,6 @@
 $scheme-color-one: rgb(54, 158, 243);
 $scheme-color-two: #0069d9;
-$scheme-color-three: #283655;
+$scheme-color-three: #a6d1ff;
 $scheme-color-four: #1e1f26;
 $link-font-color: rgb(43, 43, 43);
 
@@ -233,6 +233,14 @@ body {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		&.about {
+			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+				url(../img/about-bg.jpg) repeat 0 0;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
 		.flex-row {
 			height: 100%;
 
@@ -258,6 +266,19 @@ body {
 						#headerTopInnerText {
 							font-size: 60px !important;
 						}
+					}
+				}
+				&.about {
+					#headerTopText {
+						color: $scheme-color-three;
+						font-size: 80px;
+					}
+					p {
+						color: white;
+						font-size: 24px;
+					}
+					.embed-responsive {
+						margin-top: 30px !important;
 					}
 				}
 			}
@@ -453,6 +474,14 @@ body {
 			.list {
 				padding-left: 0px;
 				list-style: none;
+				a {
+					color: white;
+					&:hover,
+					&:active,
+					&:visited {
+						color: $scheme-color-three;
+					}
+				}
 			}
 		}
 	}
