@@ -113,9 +113,10 @@ body {
 }
 
 @media (max-width: 767px) /* @grid-float-breakpoint -1 */ {
-	.fixed-top {
-		position: relative;
-		top: auto;
+	#headerCol {
+		// position: relative;
+		// top: auto;
+		padding-top: 50px;
 	}
 	.navbar-collapse {
 		max-height: none;
@@ -213,13 +214,15 @@ body {
 	@media (max-width: 500px) {
 		margin-top: 0px !important;
 		.container-fluid {
-			height: 100vh;
+			height: 100%;
+			padding-bottom: 30px;
 		}
 	}
 
 	@media (min-width: 501px) {
 		.container-fluid {
-			height: 75vh;
+			height: 100%;
+			padding-bottom: 30px;
 		}
 	}
 

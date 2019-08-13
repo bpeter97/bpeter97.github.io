@@ -17,7 +17,7 @@
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+	
 	<!-- Spinner -->
 	<script>
 		$(function () {
@@ -90,7 +90,7 @@
 	<section id="headerSection">
 		<div class="container-fluid">
 			<div class="d-flex flex-row">
-				<div class="col mx-auto my-auto">
+				<div class="col mx-auto my-auto" id="headerCol">
 					<img src="./img/PWD.png" alt="Peter Web Development Logo" id="headerPWDlogo" />
 					<br />
 					<span id="headerTopText" class="h1">
@@ -112,7 +112,7 @@
 		</div>
 	</section>
 
-	<section id="technologies" class="d-none d-md-block">
+	<section id="technologies" class="d-none d-lg-block">
 		<div class="container-fluid">
 			<div class="d-flex flex-row justify-content-around">
 				<img src="./img/wordpress-logo.png" alt="Wordpress" />
@@ -395,13 +395,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-	 crossorigin="anonymous"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
-	
+	 crossorigin="anonymous"></script>	
 
 	<!-- Typewriter Effect -->
-	<script>
+	<script type="text/javascript">
 		var TxtRotate = function (el, toRotate, period) {
 			this.toRotate = toRotate;
 			this.el = el;
@@ -464,14 +461,34 @@
 	</script>
 
 	<!-- Navbar Schrinking Effect -->
-	<script>
+	<script type="text/javascript">
 		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-		window.onscroll = function () {
-			scrollFunction();
-		};
+
+		let width = window.innerWidth;
+
+		if (width > 1300) {
+			window.onscroll = function () {		
+				scrollFunction();
+			}			
+		} else {
+			document.getElementById("mainNav").style.padding = ".4rem 1rem";
+			document.getElementById("mainNav").style.fontSize = "18px";
+			document.getElementById("navbarBrand").style.fontSize = "24px";
+			if(width < 1210) {
+				document.getElementById("headerSection").style.marginTop = "60px";
+			} else {
+				document.getElementById("headerSection").style.marginTop = "70px";
+			}
+			if(width < 768) {
+				document.getElementById("headerCol").style.paddingTop = "80px";
+			} else {
+				document.getElementById("headerCol").style.paddingTop = "20px";
+			}
+			
+			
+		}
 
 		function scrollFunction() {
-			if ($(window).width() > 1133) {
 				if (
 					document.body.scrollTop > 50 ||
 					document.documentElement.scrollTop > 50
@@ -484,11 +501,6 @@
 					document.getElementById("mainNav").style.fontSize = "24px";
 					document.getElementById("navbarBrand").style.fontSize = "30px";
 				}
-			} else {
-				document.getElementById("mainNav").style.padding = ".4rem 1rem";
-				document.getElementById("mainNav").style.fontSize = "18px";
-				document.getElementById("navbarBrand").style.fontSize = "24px";
-			}
 		}
 	</script>
 
