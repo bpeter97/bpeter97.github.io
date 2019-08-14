@@ -160,6 +160,9 @@ body {
   /*
  * 5. default skin
  */ }
+  @media (max-width: 1000px) {
+    #pictureSection .chelsea {
+      margin-top: 20px; } }
   #pictureSection .team-layout {
     position: relative; }
   #pictureSection .team-member-image-outer {
@@ -170,6 +173,9 @@ body {
     position: relative;
     z-index: 1;
     max-width: 400px; }
+    @media (max-width: 1000px) {
+      #pictureSection .team-member-image {
+        max-width: 100%; } }
   #pictureSection .team-member-image-outer:before {
     content: "";
     position: absolute;
