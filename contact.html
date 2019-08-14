@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous" />
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Damion|Great+Vibes|Open+Sans:600|Roboto:300&display=swap" rel="stylesheet"
+	/>
+
+	<script src="https://kit.fontawesome.com/1a2230bd17.js"></script>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script>
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			document.getElementById("technologies").style.display = "none";
+		}
+	</script>
+
+	<!-- Spinner -->
+	<script>
+		$(function () {
+			// waiting for the page to bo be fully loaded
+			$(".spinner").fadeOut("slow", function () {
+				// fading out preloader
+				$(this).remove(); // removing it from the DOM
+			});
+		});
+	</script>
+
+	<link rel="stylesheet" href="css/style.css" />
+
+	<title>PWD | Web Development, Design, Hosting, SEO, and more!</title>
+</head>
+
+<body>
+	<div class="spinner"></div>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="mainNav">
+		<div class="container">
+			<a href="./index.html">
+        <img class="mr-3 d-none d-sm-block" src="./img/PWD.png" alt="Peter Web Development Logo" id="navbar-logo" />
+      </a>
+			<a class="navbar-brand" id="navbarBrand" href="./index.html">
+				Peter Web Development
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+			 aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav ml-5 mr-auto justify-content-around w-75">
+					<li class="nav-item active">
+						<a class="nav-link" href="./about.html">About</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">Services</a
+							>
+						<div class="dropdown-menu" aria-labelledby="servicesDropdown">
+							<a href="./services/hosting.html" class="dropdown-item">Web Hosting</a>
+						<a href="./services/design.html" class="dropdown-item">Website Design</a>
+						<a href="./services/maintenance.html" class="dropdown-item">Website Maintenance</a>
+						<a href="./services/seo.html" class="dropdown-item">Search Engine Optimization</a>
+						<a href="./services/management.html" class="dropdown-item">Content Management</a>
+						<a href="./services/custom.html" class="dropdown-item">Custom Web Development</a>
+						<a href="./services/ecommerce.html" class="dropdown-item">E-Commerce</a>
+			</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./blog.html">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./contact.html">Contact</a>
+			</li>
+			</ul>
+			<ul class="navbar-text my-auto d-inline">
+				<li class="nav-icon d-inline">
+					<i class="fab fa-facebook-square"></i>
+				</li>
+				<li class="nav-icon d-inline">
+					<i class="fab fa-twitter-square"></i>
+				</li>
+				<li class="nav-icon d-inline">
+					<i class="fab fa-linkedin"></i>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+	<section id="headerSection" class="">
+		<div class="container-fluid contact">
+			<div class="d-flex flex-row">
+				<div class="col mx-auto my-auto pt-5 contact" id="headerCol">
+					<div class="container pt-5 text-left">
+						<div class="row">
+							<div class="col-12 text-center">
+								<span id="headerTopText" class="h1 text-uppercase">
+                  Contact
+                </span>
+								<p class="pt-2">
+									We are looking forward to hearing about your next project, your company, and about you! Please use the form below to leave
+									us a message and we will contact you as soon as possible!
+								</p>
+								<br />
+								<a href="#contact" type="button" class="btn btn-primary mt-2 header-button ml-0">
+                  Contact Us
+                </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="letsBuild">
+		<div class="container-fluid">
+			<div class="d-flex flex-row justify-content-around">
+				<h4>LETS BUILD SOMETHING TOGETHER</h4>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container pt-5 pb-5">
+			<div class="row">
+				<div class="col">
+					<p class="text-center">
+
+					</p>
+					<div class="card">
+						<div class="card-body">
+							<form>
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<div class="form-group">
+											<label for="name">Name</label>
+											<input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter your full name">
+											<small id="nameHelp" class="form-text text-muted">Please enter your first and last name.</small>
+										</div>
+										<div class="form-group">
+											<label for="phone">Phone Number</label>
+											<input type="text" class="form-control" id="phone" aria-describedby="nameHelp" placeholder="Enter your phone number">
+											<small id="nameHelp" class="form-text text-muted">Please enter the best number for us to reach you.</small>
+										</div>
+										<div class="form-group">
+											<label for="exampleInputEmail1">Email address</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+											<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<div class="form-group">
+											<label for="subject">Subject</label>
+											<select class="form-control" id="subject">
+												<option value="Select One">Select One</option>
+												<option value="Web Hosting">Web Hosting</option>
+												<option value="Web Design">Web Design</option>
+												<option value="Custom Development">Custom Development</option>
+												<option value="SEO">SEO</option>
+												<option value="Content Management">Content Management</option>
+												<option value="Web Maintenance">Web Maintenance</option>
+												<option value="E-Commerce">E-Commerce</option>
+												<option value="Emergency Help">Emergency Help</option>
+												<option value="Review">Review</option>
+												<option value="General Inquiry">General Inquiry</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="projectDetails">Project Details</label>
+											<textarea class="form-control" id="projectDetails" placeholder="Enter the project details here." rows="7"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 text-center">
+									<button type="submit" class="btn btn-primary">Send Message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="copyright">
+		<div class="container pt-5">
+			<div class="row" id="footerRow">
+				<div class="col-sm-3 col-12">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title text-center">Links</h5>
+							<ul class="list">
+								<li class="list-item"><a href="./about.html">About</a></li>
+								<li class="list-item">Contact</li>
+								<li class="list-item">Blog</li>
+								<li class="list-item">Services</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-12">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title text-center">Social Media</h5>
+							<ul class="list">
+								<li class="list-item">Facebook</li>
+								<li class="list-item">Twitter</li>
+								<li class="list-item">Linked In</li>
+								<li class="list-item">Instagram</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-12">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title text-center">Services</h5>
+							<ul class="list">
+								<li class="list-item">Web Hosting</li>
+								<li class="list-item">Website Design</li>
+								<li class="list-item">Website Maintenance</li>
+								<li class="list-item">Search Engine Optimization</li>
+								<li class="list-item">Content Management</li>
+								<li class="list-item">Custom Web Development</li>
+								<li class="list-item">E-Commerce</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-12">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title text-center">Peter Web Development</h5>
+							<ul class="list">
+								<li class="list-item">Some PO Box?</li>
+								<li class="list-item">Visalia, C.A., U.S.A.</li>
+								<li class="list-item">Phone: 555-555-5555</li>
+								<li class="list-item">Email: info@pwd.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<p class="text-center">All Rights Reserved 2019 | Peter Web Development - A web hosting, design, and development company.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Optional JavaScript -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	 crossorigin="anonymous"></script>
+
+	<!-- Typewriter Effect -->
+	<script type="text/javascript">
+		var TxtRotate = function (el, toRotate, period) {
+			this.toRotate = toRotate;
+			this.el = el;
+			this.loopNum = 0;
+			this.period = parseInt(period, 10) || 2000;
+			this.txt = "";
+			this.tick();
+			this.isDeleting = false;
+		};
+
+		TxtRotate.prototype.tick = function () {
+			var i = this.loopNum % this.toRotate.length;
+			var fullTxt = this.toRotate[i];
+
+			if (this.isDeleting) {
+				this.txt = fullTxt.substring(0, this.txt.length - 1);
+			} else {
+				this.txt = fullTxt.substring(0, this.txt.length + 1);
+			}
+
+			this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+			var that = this;
+			var delta = 300 - Math.random() * 100;
+
+			if (this.isDeleting) {
+				delta /= 2;
+			}
+
+			if (!this.isDeleting && this.txt === fullTxt) {
+				delta = this.period;
+				this.isDeleting = true;
+			} else if (this.isDeleting && this.txt === "") {
+				this.isDeleting = false;
+				this.loopNum++;
+				delta = 500;
+			}
+
+			setTimeout(function () {
+				that.tick();
+			}, delta);
+		};
+
+		window.onload = function () {
+			var elements = document.getElementsByClassName("txt-rotate");
+			for (var i = 0; i < elements.length; i++) {
+				var toRotate = elements[i].getAttribute("data-rotate");
+				var period = elements[i].getAttribute("data-period");
+				if (toRotate) {
+					new TxtRotate(elements[i], JSON.parse(toRotate), period);
+				}
+			}
+			// INJECT CSS
+			var css = document.createElement("style");
+			css.type = "text/css";
+			css.innerHTML =
+				".txt-rotate > .wrap { border-right: 0.08em solid #0069d9 }";
+			document.body.appendChild(css);
+		};
+	</script>
+
+	<!-- Navbar Schrinking Effect -->
+	<script type="text/javascript">
+		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+
+		let width = window.innerWidth;
+
+		if (width > 1300) {
+			window.onscroll = function () {
+				scrollFunction();
+			}
+		} else {
+			document.getElementById("mainNav").style.padding = ".4rem 1rem";
+			document.getElementById("mainNav").style.fontSize = "18px";
+			document.getElementById("navbarBrand").style.fontSize = "24px";
+			if (width < 1210) {
+				document.getElementById("headerSection").style.marginTop = "60px";
+			} else {
+				document.getElementById("headerSection").style.marginTop = "70px";
+			}
+			if (width < 768) {
+				document.getElementById("headerCol").style.paddingTop = "80px";
+			}
+
+
+		}
+
+		function scrollFunction() {
+			if (
+				document.body.scrollTop > 50 ||
+				document.documentElement.scrollTop > 50
+			) {
+				document.getElementById("mainNav").style.padding = ".4rem 1rem";
+				document.getElementById("mainNav").style.fontSize = "18px";
+				document.getElementById("navbarBrand").style.fontSize = "24px";
+			} else {
+				document.getElementById("mainNav").style.padding = "2rem 1rem";
+				document.getElementById("mainNav").style.fontSize = "24px";
+				document.getElementById("navbarBrand").style.fontSize = "30px";
+			}
+		}
+	</script>
+
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5d51770677aa790be32e8b2e/1di37p2fq';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
+</body>
+
+</html>

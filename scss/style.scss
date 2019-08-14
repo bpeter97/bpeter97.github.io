@@ -247,6 +247,13 @@ body {
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+		&.contact {
+			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+				url(../img/contact.jpg) repeat 0 0;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 
 		.flex-row {
 			height: 100%;
@@ -272,6 +279,12 @@ body {
 					width: 250px;
 					margin-bottom: 50px;
 				}
+				@media (max-width: 1200px) {
+					#headerTopText {
+						padding-top: 60px;
+					}
+				}
+
 				#headerTopText {
 					font-family: $oswald-font;
 					color: white;
@@ -300,6 +313,16 @@ body {
 					}
 					.embed-responsive {
 						margin-top: 30px !important;
+					}
+				}
+				&.contact {
+					#headerTopText {
+						color: white;
+						font-size: 80px;
+					}
+					p {
+						color: white;
+						font-size: 24px;
 					}
 				}
 			}
