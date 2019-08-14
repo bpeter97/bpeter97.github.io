@@ -312,9 +312,35 @@ body {
 	padding-bottom: 60px;
 }
 
+#aboutUs {
+	// About us section added next.
+}
+
 #pictureSection {
 	padding-top: 60px;
 	padding-bottom: 60px;
+	background-color: rgb(238, 238, 238);
+
+	.row {
+		.col-12 {
+			h2 {
+				font-family: $oswald-font;
+				font-size: 3rem;
+			}
+			hr {
+				width: 75%;
+				// background-color: $scheme-color-one;
+				border: 0;
+				height: 2px;
+				background-image: linear-gradient(
+					to right,
+					rgba(6, 9, 53, 0),
+					rgba(0, 62, 179, 0.75),
+					rgba(6, 9, 53, 0)
+				);
+			}
+		}
+	}
 
 	@media (max-width: 1000px) {
 		.chelsea {

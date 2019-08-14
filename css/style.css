@@ -156,10 +156,19 @@ body {
 #pictureSection {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #eeeeee;
   /* zoom and rotate */
   /*
  * 5. default skin
  */ }
+  #pictureSection .row .col-12 h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem; }
+  #pictureSection .row .col-12 hr {
+    width: 75%;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(6, 9, 53, 0), rgba(0, 62, 179, 0.75), rgba(6, 9, 53, 0)); }
   @media (max-width: 1000px) {
     #pictureSection .chelsea {
       margin-top: 20px; } }
