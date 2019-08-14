@@ -19,11 +19,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 	<script>
-		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			document.getElementById("technologies").style.display = "none";
 		}
 	</script>
-	
+
 	<!-- Spinner -->
 	<script>
 		$(function () {
@@ -44,7 +44,7 @@
 	<div class="spinner"></div>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="mainNav">
 		<div class="container">
-      <a href="./index.html">
+			<a href="./index.html">
         <img class="mr-3 d-none d-sm-block" src="./img/PWD.png" alt="Peter Web Development Logo" id="navbar-logo" />
       </a>
 			<a class="navbar-brand" id="navbarBrand" href="./index.html">
@@ -99,31 +99,29 @@
 		<div class="container-fluid about">
 			<div class="d-flex flex-row">
 				<div class="col mx-auto my-auto pt-5 about" id="headerCol">
-          <div class="container pt-5 text-left">
-            <div class="row">
-              <div class="col-12 col-lg-6">
-                <span id="headerTopText" class="h1 text-uppercase">
+					<div class="container pt-5 text-left">
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<span id="headerTopText" class="h1 text-uppercase">
                   About
                 </span>
-                <p class="pt-2">
-                  Our goal is to provide our clients with not only a beautiful
-                  website that helps their business flourish, but to also make
-                  the process of registering, hosting, designing, and launching a 
-                  website as seemless as possible. We also hope to build a long-term
-                  relationship with our clients as well.
-                </p>
-                <br />
-                <button type="button" class="btn btn-primary mt-2">
+								<p class="pt-2">
+									Our goal is to provide our clients with not only a beautiful website that helps their business flourish, but to also make
+									the process of registering, hosting, designing, and launching a website as seemless as possible. We also hope to
+									build a long-term relationship with our clients as well.
+								</p>
+								<br />
+								<button type="button" class="btn btn-primary mt-2 header-button ml-0">
                   Contact Us
                 </button>
-              </div>
-              <div class="col-12 col-lg-6 text-center">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div> 
+							</div>
+							<div class="col-12 col-lg-6 text-center">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -145,60 +143,92 @@
 		</div>
 	</section>
 
+	<section id="aboutUs" class="pt-5 pb-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h2 class="text-muted text-uppercase pb-5">
+						About Peter Web Development
+					</h2>
+					<p>
+						Founded in 2019, Peter Web Development is a small web design, development, and hosting company based in Visalia, CA, USA.
+						We are all about the customer. We focus on your wants and needs while providing our expertise to support your business
+						growth. We offer a wide range of web design and development services, from creating mobile friendly solutions, responsive
+						designs, custom e-commerce services, content management, website maintenance, website hosting, to search engine optimization.
+						We strive to offer our customer every aspect they need for designing, developing, and hosting a website to avoid having
+						to work with multiple companies to solve one problem.
+					</p>
+					<p>
+						Our mission is to assist our clients in creating a professional digital footprint that supports business growth. We believe
+						that businesses are built on relationships, great work, and measurable results. With that, our process was built with
+						the client in mind. Not only do we offer services from registering domains, hosting, website design/development, and
+						SEO optimization, but we also ensure that our client is informed in every part of our process.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="cta-services">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center ">
+					<a href="#services" class="btn btn-primary text-uppercase">
+						Check out what we do
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="pictureSection">
-    <div class="container">
-      <div class="row pb-5">
-        <div class="col-12 text-center">
-          <h2 class="text-muted text-uppercase">
-            The Team
-          </h2>
-          <hr/>
-        </div>
-      </div>
-      <div class="row justify-content-around">
-        <!-- <div class="col text-center">
-          <img src="./img/brian.jpg" alt="Brian L. Peter Jr. (Owner)" class="img-responsive team-member-image">
-        </div>
-        <div class="col text-center">
-          <img src="./img/chelsea.jpg" alt="Chelsea C. Peter (Co-Owner)" class="img-responsive team-member-image">
-        </div> -->
-        <div class="col-sm-12 col-lg-4 text-center">
-          <div class="team team-member-style team-mask-circle team-member-zoom-rotate">
-            <div class="team-layout">
-              <div class="team-member-image-outer">
-                <img src="./img/brian.png" alt="Brian L. Peter Jr. (Owner)" class="team-member-image">
-              </div>
-              <div class="team-member-text-outer">
-                <div class="team-member-text-inner">
-                  <div class="team-member-text">
-                    <h3 class="team-member-name">Brian L. Peter Jr.</h3>
-                    <span class="team-member-title">Owner / Web Developer</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-lg-4 chelsea text-center">
-          <article class="team team-member-style team-mask-circle team-member-zoom-rotate text-center">
-            <div class="team-layout">
-              <div class="team-member-image-outer">
-                <img src="./img/chelsea.png" alt="Chelsea C. Peter (Co-Owner)" class="team-member-image">
-              </div>
-              <div class="team-member-text-outer">
-                <div class="team-member-text-inner">
-                  <div class="team-member-text">
-                    <h3 class="team-member-name">Chelsea C. Peter</h3>
-                    <span class="team-member-title">Co-Owner</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
+		<div class="container">
+			<div class="row pb-5">
+				<div class="col-12 text-center">
+					<h2 class="text-muted text-uppercase">
+						The Team
+					</h2>
+					<hr>
+				</div>
+			</div>
+			<div class="row justify-content-around">
+				<div class="col-sm-12 col-lg-4 text-center">
+					<div class="team team-member-style team-mask-circle team-member-zoom-rotate">
+						<div class="team-layout">
+							<div class="team-member-image-outer">
+								<img src="./img/brian.png" alt="Brian L. Peter Jr. (Owner)" class="team-member-image">
+							</div>
+							<div class="team-member-text-outer">
+								<div class="team-member-text-inner">
+									<div class="team-member-text">
+										<h3 class="team-member-name">Brian L. Peter Jr.</h3>
+										<span class="team-member-title">Owner / Web Developer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-lg-4 chelsea text-center">
+					<article class="team team-member-style team-mask-circle team-member-zoom-rotate text-center">
+						<div class="team-layout">
+							<div class="team-member-image-outer">
+								<img src="./img/chelsea.png" alt="Chelsea C. Peter (Co-Owner)" class="team-member-image">
+							</div>
+							<div class="team-member-text-outer">
+								<div class="team-member-text-inner">
+									<div class="team-member-text">
+										<h3 class="team-member-name">Chelsea C. Peter</h3>
+										<span class="team-member-title">Co-Owner / Brand Ambassador</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section class="services pt-100 pb-50" id="services">
 		<div class="container">
@@ -210,8 +240,8 @@
 						<h4>Web Hosting</h4>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
 						<button type="button" class="btn btn-primary mt-3">
-										Learn More
-									</button>
+							Learn More
+						</button>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -449,7 +479,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-	 crossorigin="anonymous"></script>	
+	 crossorigin="anonymous"></script>
 
 	<!-- Typewriter Effect -->
 	<script type="text/javascript">
@@ -521,51 +551,51 @@
 		let width = window.innerWidth;
 
 		if (width > 1300) {
-			window.onscroll = function () {		
+			window.onscroll = function () {
 				scrollFunction();
-			}			
+			}
 		} else {
 			document.getElementById("mainNav").style.padding = ".4rem 1rem";
 			document.getElementById("mainNav").style.fontSize = "18px";
 			document.getElementById("navbarBrand").style.fontSize = "24px";
-			if(width < 1210) {
+			if (width < 1210) {
 				document.getElementById("headerSection").style.marginTop = "60px";
 			} else {
 				document.getElementById("headerSection").style.marginTop = "70px";
 			}
-			if(width < 768) {
+			if (width < 768) {
 				document.getElementById("headerCol").style.paddingTop = "80px";
 			}
-			
-			
+
+
 		}
 
 		function scrollFunction() {
-				if (
-					document.body.scrollTop > 50 ||
-					document.documentElement.scrollTop > 50
-				) {
-					document.getElementById("mainNav").style.padding = ".4rem 1rem";
-					document.getElementById("mainNav").style.fontSize = "18px";
-					document.getElementById("navbarBrand").style.fontSize = "24px";
-				} else {
-					document.getElementById("mainNav").style.padding = "2rem 1rem";
-					document.getElementById("mainNav").style.fontSize = "24px";
-					document.getElementById("navbarBrand").style.fontSize = "30px";
-				}
+			if (
+				document.body.scrollTop > 50 ||
+				document.documentElement.scrollTop > 50
+			) {
+				document.getElementById("mainNav").style.padding = ".4rem 1rem";
+				document.getElementById("mainNav").style.fontSize = "18px";
+				document.getElementById("navbarBrand").style.fontSize = "24px";
+			} else {
+				document.getElementById("mainNav").style.padding = "2rem 1rem";
+				document.getElementById("mainNav").style.fontSize = "24px";
+				document.getElementById("navbarBrand").style.fontSize = "30px";
+			}
 		}
 	</script>
 
 	<!--Start of Tawk.to Script-->
 	<script type="text/javascript">
-		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-			(function(){
-			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-			s1.async=true;
-			s1.src='https://embed.tawk.to/5d51770677aa790be32e8b2e/1di37p2fq';
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5d51770677aa790be32e8b2e/1di37p2fq';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
 		})();
 	</script>
 	<!--End of Tawk.to Script-->
