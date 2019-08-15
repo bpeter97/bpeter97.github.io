@@ -254,6 +254,13 @@ body {
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+		&.web-hosting {
+			background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+				url(../img/servers.jpg) repeat 0 0;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 
 		.flex-row {
 			height: 100%;

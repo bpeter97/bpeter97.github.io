@@ -118,6 +118,11 @@ body {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
+    #headerSection .container-fluid.web-hosting {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/servers.jpg) repeat 0 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
     #headerSection .container-fluid .flex-row {
       height: 100%; }
       #headerSection .container-fluid .flex-row .col {
